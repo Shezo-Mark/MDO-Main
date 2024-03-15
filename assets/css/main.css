@@ -1459,7 +1459,7 @@ section.testimonails_section .owl-item.active p.mt-4:before {
   position: absolute !important;
   right: 0 !important;
   left: 0 !important;
-  margin-top: -38em;
+  margin-top: -40em;
 }
 }
 
@@ -1470,4 +1470,12 @@ section.testimonails_section .owl-item.active p.mt-4:before {
 
 .section_scrolabble .col-md-6 {
   margin-top: 0 !important;
+}
+.bg-img {
+ 
+    background-image: url('/assets/images/aaaa.png'); /* Set the background image */
+    position: absolute; /* Position the image absolutely within the scrolling section */
+    left: 0; /* Initially at the left edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
 }
