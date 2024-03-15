@@ -43,8 +43,8 @@ $owl.owlCarousel({
     responsiveClass: true,
     autoplay:true,
     // slideTransition: linear,
-autoplayTimeout:3000,
-autoplayHoverPause:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true,
     responsive: {
         0: {
             items: 1
@@ -124,16 +124,16 @@ $('.test_slider').owlCarousel({
 //   });
 
 
-    $(window).on("load resize scroll", function() {
-        $("#scrolls").each(function() {
-        var windowTop = $(window).scrollTop();
-        var elementTop = $(this).offset().top;
-        var leftPosition = windowTop - elementTop;
-            $(this)
-            .find(".bg-img")
-            .css({ left: leftPosition });
-        });
-    });
+    // $(window).on("load resize scroll", function() {
+    //     $("#scrolls").each(function() {
+    //     var windowTop = $(window).scrollTop();
+    //     var elementTop = $(this).offset().top;
+    //     var leftPosition = windowTop - elementTop;
+    //         $(this)
+    //         .find(".bg-img")
+    //         .css({ left: leftPosition });
+    //     });
+    // });
 
     $(document).ready(function(){
         $("#click").click(function(){

@@ -11,9 +11,9 @@
 .scrol_main {
     margin: 7% 0;
 }
-// .owl-item.active.center ul.list-hidden, .owl-item h3 {
-//     display: none;
-// }
+.nav-link.active img {
+  filter: brightness(0) invert(1);
+}
 .item-content {
     position: absolute;
     margin: 5% 1%;
@@ -36,6 +36,7 @@
     overflow-y: scroll;
     z-index: 1;
     position: sticky;
+    max-width: 100% !important;
 }
 
 .section_scrolabble .col-md-6 {
