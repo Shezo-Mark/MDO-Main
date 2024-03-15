@@ -321,8 +321,10 @@ a {
   outline: 0;
   margin-top: 10px;
   border-radius: 8px;
-  padding: 6px 12px 6px 12px;
+  padding: 6px 12px 6px 16px;
+  color: white;
 }
+
 .section_contact .contact_form textarea {
   width: 100%;
   min-height: 200px;
@@ -331,7 +333,18 @@ a {
   outline: 0;
   margin-top: 10px;
   border-radius: 8px;
-  padding: 6px 12px 6px 12px;
+  padding: 10px 12px 6px 16px;
+  color: white;
+}
+.section_contact .contact_form input:hover {
+  background: #636363;
+}
+.section_contact .contact_form textarea:hover{
+  background: #636363;
+}
+.section_contact .contact_form textarea:focus{
+  outline: none;
+  box-shadow: none;
 }
 .section_contact .contact_info {
   margin-bottom: 50px;
@@ -968,6 +981,9 @@ a.nav-link.sign_in {
 .comprehensive_coverage_section .comprehensive_coverage_slider {
   margin-bottom: 150px;
 }
+.testimonails_section .test_slider  {
+  margin-left: 5em;
+}
 .comprehensive_coverage_section .list-hidden {
   display: none;
   transition: 1s ease;
@@ -1083,7 +1099,7 @@ a.nav-link.sign_in {
   font-size: 30px !important;
 }
 .testimonails_section .owl-carousel div.owl-dots {
-  display: none !important;
+  display: block !important;
 }
 
 .section_scrolabble {
