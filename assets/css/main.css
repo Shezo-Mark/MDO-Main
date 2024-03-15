@@ -799,7 +799,16 @@ a {
 .hero_counter .connter_wrap .count_item + .count_item {
   margin-left: 20px;
 }
-
+.hero_counter .connter_wrap .count_item span{
+  width: 0 !important;
+  font-size: 52px;
+    color: #02C2FF;
+    font-weight: 500;
+}
+._number{
+  width: 36px !important; 
+  text-align: center !important;
+}
 /*--------------*\
     header Section
 \*--------------*/
