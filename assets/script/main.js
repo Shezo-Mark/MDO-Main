@@ -81,15 +81,12 @@ $('.test_slider').owlCarousel({
     nav: true,
     responsive: {
         0: {
-            nav: true,
             items: 1
         },
         1000: {
-            nav: true,
             items: 2
         },
         1400: {
-            nav: true,
             items:4,
         }
     }
