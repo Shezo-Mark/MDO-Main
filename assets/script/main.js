@@ -124,16 +124,19 @@ $('.test_slider').owlCarousel({
 //   });
 
 
-    $(window).on("load resize scroll", function() {
+$(document).ready(function() {
+    $("#scrollableDiv").on("scroll", function() {
         $("#11a").each(function() {
-        var windowTop = $(window).scrollTop();
-        var elementTop = $(this).offset().top;
-        var leftPosition = windowTop - elementTop;
+            var scrollPosition = $(this).closest("#scrollableDiv").scrollTop();
+            var elementTop = $(this).offset().top;
+            var leftPosition = scrollPosition - elementTop;
             $(this)
-            .find(".bg-img")
-            .css({ left: leftPosition });
+                .find(".bg-img")
+                .css({ left: leftPosition });
         });
     });
+});
+
 
     $(document).ready(function(){
         $("#click").click(function(){
