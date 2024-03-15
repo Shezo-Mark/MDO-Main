@@ -1,0 +1,30 @@
+/*--------------*\
+    header Section
+\*--------------*/
+header{
+    background-color: #0C0D11;
+    position: relative;
+    z-index: 9;
+    .navbar-brand{
+        max-width: 132px;
+        width: 132px;
+        img{
+            width: 100%;
+        }
+    }
+    .navbar-nav{
+        li{
+            a{
+                font-size: 14px;
+                color: white;
+                font-weight: 400;
+            }
+            + li{
+                margin-left: 20px;
+            }
+            &:nth-child(4){
+                margin-right: 124px;
+            }
+        }
+    }
+}

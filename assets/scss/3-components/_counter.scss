@@ -1,0 +1,40 @@
+ .hero_counter{
+    > h2{
+        font-weight: 400;
+        margin: 0 !important;
+    }
+    .connter_wrap{
+        // background: tomato;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
+        display: flex;
+        justify-content:space-between;
+        margin-top: 52px;
+        width: 100%;
+         @include grid-md-down{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+         }
+      span{
+        font-size: 52px;
+        color: $brand;
+        font-weight: 500;
+      }
+      p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #949494;
+      }
+      .count_item{
+        + .count_item{
+            margin-left: 20px;
+        }
+      }
+     }
+ }
+ 
