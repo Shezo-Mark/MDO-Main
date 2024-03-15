@@ -124,16 +124,16 @@ $('.test_slider').owlCarousel({
 //   });
 
 
-    // $(window).on("load resize scroll", function() {
-    //     $("#scrolls").each(function() {
-    //     var windowTop = $(window).scrollTop();
-    //     var elementTop = $(this).offset().top;
-    //     var leftPosition = windowTop - elementTop;
-    //         $(this)
-    //         .find(".bg-img")
-    //         .css({ left: leftPosition });
-    //     });
-    // });
+    $(window).on("load resize scroll", function() {
+        $("#11a").each(function() {
+        var windowTop = $(window).scrollTop();
+        var elementTop = $(this).offset().top;
+        var leftPosition = windowTop - elementTop;
+            $(this)
+            .find(".bg-img")
+            .css({ left: leftPosition });
+        });
+    });
 
     $(document).ready(function(){
         $("#click").click(function(){
